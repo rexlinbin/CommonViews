@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="grey9">#999</color>
+    <color name="list_title">#666</color>
+    <color name="list_content">#333</color>
+    <color name="info_title">#666</color>
+    <color name="info_content">#333</color>
+    <color name="add_title">#000</color>
+    <color name="add_content">#666</color>
+    <color name="add_hint">#bbb</color>
+    <color name="title">#333</color>
+    <color name="greye">#eee</color>
+    <color name="greyb">#bbb</color>
+    <color name="black3">#333</color>
+    <color name="grey6">#666</color>
+    <color name="blue">#358EF1</color>
+    <color name="blueTrans">#80358EF1</color>
+    <color name="trans">#00ffffff</color>
+    <color name="list_bg">#F8F8F8</color>
+</resources>

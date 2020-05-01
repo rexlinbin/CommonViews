@@ -1,0 +1,2 @@
+include ':app', ':common_views'
+rootProject.name='CommonViews'

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/takePicture_textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="拍照"
+        android:textSize="16sp"
+        android:textColor="#358EF1"
+        android:background="@drawable/shape_picturepicker_up"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#dddddd"/>
+    <TextView
+        android:id="@+id/pickPicture_textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="从相册中选择"
+        android:textSize="16sp"
+        android:textColor="#358EF1"
+        android:background="@drawable/shape_picturepicker_down"/>
+
+
+    <TextView
+        android:id="@+id/cancel_textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:background="@drawable/shape_picturepicker_all"/>
+</LinearLayout>
