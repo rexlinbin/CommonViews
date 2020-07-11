@@ -54,6 +54,30 @@ public class IosAlertDialog {
         return this;
     }
 
+    public IosAlertDialog oneButtonBuilder() {
+        // 获取Dialog布局
+        View view = LayoutInflater.from(context).inflate(
+                R.layout.view_alertdialog_one_button, null);
+        txt_msg = view.findViewById(R.id.txt_msg);
+        btn_confirm = view.findViewById(R.id.btn_confirm);
+        btn_confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        // 定义Dialog布局和参数
+        dialog = new Dialog(context, R.style.AlertDialogStyle);
+        dialog.setContentView(view);
+
+//		// 调整dialog背景大小
+//		lLayout_bg.setLayoutParams(new FrameLayout.LayoutParams((int) (display
+//		        .getWidth() * 0.5), LayoutParams.WRAP_CONTENT));
+
+        return this;
+    }
+
 
     public IosAlertDialog setCancelable(boolean cancel) {
         dialog.setCancelable(cancel);

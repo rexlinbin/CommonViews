@@ -41,13 +41,25 @@ public final class DialogUtil {
                 listener.yes();
             }
         });
-//        dialog.setNegativeButton("取消", new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//            }
-//        });
-        if (act != null && !act.isFinishing()) {
+        if (!act.isFinishing()) {
+            dialog.show();
+        }
+    }
+
+    /*
+     * 仿ios dialog
+     * */
+    public static void alertIosDialog(Activity act, String message, String confirmMessage,final DialogAlertListener listener) {
+        IosAlertDialog dialog = new IosAlertDialog(act).oneButtonBuilder();
+        dialog.setMsg(message);
+        dialog.setConfirmMsg(confirmMessage);
+        dialog.setConfirmButton(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.yes();
+            }
+        });
+        if (!act.isFinishing()) {
             dialog.show();
         }
     }
