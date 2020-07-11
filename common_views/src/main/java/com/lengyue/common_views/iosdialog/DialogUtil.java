@@ -35,12 +35,14 @@ public final class DialogUtil {
         dialog.setMsg(message);
         dialog.setConfirmMsg(confirmMessage);
         dialog.setConcleMsg(cancleMessage);
-        dialog.setConfirmButton(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listener.yes();
-            }
-        });
+        if (listener != null) {
+            dialog.setConfirmButton(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.yes();
+                }
+            });
+        }
         if (!act.isFinishing()) {
             dialog.show();
         }
@@ -53,12 +55,14 @@ public final class DialogUtil {
         IosAlertDialog dialog = new IosAlertDialog(act).oneButtonBuilder();
         dialog.setMsg(message);
         dialog.setConfirmMsg(confirmMessage);
-        dialog.setConfirmButton(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listener.yes();
-            }
-        });
+        if (listener != null) {
+            dialog.setConfirmButton(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.yes();
+                }
+            });
+        }
         if (!act.isFinishing()) {
             dialog.show();
         }
